@@ -1,0 +1,198 @@
+nav{
+    height: 100px;
+    padding: 0 60px;
+    background: transparent;
+}
+@media (max-width: 767px){
+    nav{
+        padding: 0;
+    }
+}
+.navbar-scroll{
+    background: #FFF;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    
+}
+.navbar-scroll a{
+    color: #000;
+}
+.navbar-brand img{
+    width: 90px;
+    height: 67.28px;
+}
+nav a{
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: Muli;
+    
+}
+a:hover{
+    color: #6CCCD4;   
+}
+/*.nav-link{
+    color: black;
+}*/
+
+
+.navbar-toggler-icon{
+    color: #fff;
+}
+.singup_list{
+    display: flex;
+    align-items: center;
+}
+.sign_up_list i{
+    font-size: 25px;
+}
+
+.signup-list a{
+    width: 120px;
+    display:inline-block;
+    text-align:center;
+}
+.signup_btn{
+    background: #DEA6C3;
+    padding: 9px 0px;
+    padding-left: 24px;
+    width: 100px;
+    border-radius: 20px;
+    color: #FFF;
+}
+.signup_btn:hover{
+    background: transparent;
+    border: 1.5px solid #DEA6C3;
+}
+
+#main_site_item{
+    color: #000;
+}
+#main_site_item:hover{
+    color: #6CCCD4;
+}
+.fa-globe{
+    font-size: 20px;
+}  
+
+
+.container2{
+      width: 100%;
+}
+
+
+
+/* HERO CSS */
+
+#border{
+    max-height: 450px;
+    width: 100%;
+    position: relative;
+    resize: both;
+    top: -450px;
+    visibility: hidden;    
+}
+
+#pot{
+    max-height: 450px;
+    width: 30%;
+    position: relative;
+    top: 0px;
+    resize: both;
+    visibility: hidden;    
+}
+
+#bird{
+    max-height: 450px;
+    width: 30%;
+    position: relative;
+    top: -700px;
+    resize: both;
+    visibility: hidden;    
+}
+
+#bird2{
+    max-height: 450px;
+    width: 30%;
+    position: relative;
+    top: -700px;
+    left: 600px;
+    resize: both;
+    visibility: hidden;    
+}
+
+
+h1{
+    font-family: "Muli",sans-serif;
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+
+#bannerPos{
+    width: auto;
+    height: 450px;
+    background-color: #ffdbf4;
+}
+
+.main-headline > h2{
+    font-family: "Muli", sans-serif !important;
+    font-size: 80px;
+    color:#953B70;
+    text-align: center;
+    font-weight: 900;
+    margin-bottom: 30px;
+    margin: auto;
+}
+
+.main-headline > h4{
+    text-align: center;
+    padding-top: 200px;
+    font-size: 30px !important;
+    font-family: "Muli", sans-serif !important;
+    color: #953B70;
+    font-weight: 400 !important;
+    letter-spacing: 0.2em;
+    transition: 0.5s;
+    
+}
+
+.banner{
+    width: auto;
+    height: 450px;
+}
+
+
+.container1{
+    justify-content: center;  
+    width: 100%;
+}
+
+#box{
+    width: 925px;
+    height: 260px;
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    border: none;
+
+}
+
+#box div{
+    -ms-flex: 1;
+    flex: 1;
+}
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 995px){
+    .main-headline > h4{
+        font-size: 20px;
+    }
+    .main-headline > h2{
+        font-size: 60px;
+    }
+}

@@ -1,0 +1,93 @@
+.image-upload > input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+ 
+
+
+.image-upload2 > input{
+     visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.modal-body{
+    text-align:center;
+}
+.upload-area{
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    max-width: 400px;
+}
+.bi-folder-plus, .bi-cloud-plus{
+    font-size: 30px;
+    color: #953B70;
+    margin-left: 10px;
+}
+.upload-area-description{
+    color: #953B70;
+    font-weight: 600;
+}
+.upload-wrap{
+    display: flex;
+    align-items: center;
+    background: #FAE5F1;
+    width: 190px;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+.uploads-flex{
+    display: flex;
+}
+#preview{
+    margin-top: 15px;
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+#preview img{
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.image-zone img{
+    width: 80px;
+}
+.preview-show-logo{
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.bi-trash{
+    color: #953B70;
+}
+
+.images-zone img{
+    width: 80px;
+    border-radius: 10px;
+}
+.preview-image{
+    margin-right: 5px;
+}
+#pro-img-logo{
+    border-radius: 10px;
+}
+#uploadContainer{
+    display:flex;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 995px){
+
+    #uploadContainer{
+        display:flex;
+        flex-direction: column;
+
+    }
+    
+}

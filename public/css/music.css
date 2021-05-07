@@ -1,0 +1,248 @@
+.container3 {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    user-select: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e7e9;
+    box-sizing: inherit;
+}
+  
+.container3 > #easteregg2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 1500px;
+    right: 300px;
+      
+}
+.outline {
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+}
+.outline *,
+.outline *::before,
+.outline *::after {
+    box-sizing: inherit;
+}
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.player {
+    display: flex;
+    overflow: hidden;
+    font-size: 1.22em;
+    border-radius: 1.35em;
+    flex-direction: column;
+    background-color: transparent;
+}
+.player__header {
+    z-index: 1;
+    display: flex;
+    height: 5.85em;
+    flex-shrink: 0;
+    position: relative;
+    align-items: flex-start;
+    border-radius: inherit;
+    justify-content: flex-end;
+    background-color: white;
+    padding: 0.95em 0.6em 0 1.2em;
+    background-color: #FAE5F1;
+}
+.slider {
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.slider.open-slider {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 14.6em;
+}
+.slider__name{
+    display:none;
+}
+.slider__name, .slider__title {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.text-wrap {
+    display: block;
+}
+.player__button {
+    all: unset;
+    z-index: 100;
+    width: 2.5em;
+    height: 2.5em;
+    cursor: pointer;
+    color: black;
+}
+.playlist {
+    transform: scale(0);
+}
+.slider.open-slider .playlist {
+    transform: scale(1);
+}
+.player__button--absolute--nw {
+    top: 5.5%;
+    left: 5.5%;
+    position: absolute;
+}
+b{
+    color: #0E4F55;
+    margin-left: 10px;
+}
+.player__button--absolute--center {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    fill: black;
+    color: black;
+}
+.player__button--absolute--center{
+      fill: black;
+}
+.bi-pause-circle {
+    display: none;
+}
+.player__controls {
+    width: 80%;
+    gap: 0.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    will-change: contents;
+    align-content: center;
+    justify-content: center;
+}
+.player__controls.move {
+    width: 88%;
+}
+.player__context {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    line-height: 1.8;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+.player__context img{
+    width: 80px;
+    height: 70px;
+    border-radius: 15px;
+}
+.slider__context {
+    width: 56.28%;
+    cursor: pointer;
+    text-align: center;
+    padding-bottom: 0.2em;
+    will-change: contents;
+}
+ @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+  
+    90% {
+      opacity: 1;
+    }
+}
+.player__controls.move .slider__context {
+    width: 49.48%;
+}
+.player__title {
+    font-size: 0.7em;
+    font-weight: bold;
+    color: #953B70;
+}
+.progres {
+    width: 90%;
+    height: 0.25em;
+    cursor: pointer;
+    border-radius: 1em;
+    touch-action: none;
+    background-color: #e5e7ea;
+}
+.player__controls.move .progres {
+    width: 98%;
+}
+.progres__filled {
+    width: 0%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: inherit;
+    background-color: #953B70;
+}
+.progres__filled::before {
+    right: 0;
+    width: 0.35em;
+    content: " ";
+    height: 0.35em;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #5781bd;
+}
+.player__playlist {
+    height: 100%;
+    overflow: auto;
+    padding: 1.05em 0.9em 0 1.2em;
+}
+.player__playlist::-webkit-scrollbar {
+    width: 0;
+}
+.player__song {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.7em;
+}
+.player__song .player__context {
+    line-height: 1.5;
+    margin-left: 0.65em;
+}
+.player__song-name {
+    font-size: 0.88em;
+}
+.player__song-time {
+    font-size: 0.65em;
+    font-weight: bold;
+    color: #00000079;
+    height: fit-content;
+    align-self: flex-end;
+}
+.audio {
+    display: none !important ;
+}
+
+.bi-pause-circle, .bi-play-circle, .bi-skip-end-circle, .bi-skip-start-circle{
+    color: #953B70;
+    font-size: 30px;
+}
+  
+  
+
+/* MEDIA QUERIES*/
+
+
+@media screen and (max-width: 600px){
+    .player__title{
+        font-size: 0.5em; 
+    }
+    .player__song-name{
+        font-size: 0.5em;
+    }
+}

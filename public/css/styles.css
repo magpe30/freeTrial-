@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i%7CRoboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap");
+
+@import "navbarHero.css";
+@import "footer.css";
+@import "themes.css";
+@import "uploads.css";
+@import "music.css";
+@import "analyse.css";
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: "Muli", sans-serif;
+    width: auto; 
+    background-color: #FAF6F8;
+    background-repeat: no-repeat;  
+}
+
+footer{
+    margin-top: 20px;
+}

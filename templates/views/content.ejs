@@ -1,0 +1,254 @@
+<div id="seasons">
+  <div class="themes-area">
+    <div class="theme-header">
+      <h4>Select the theme for the page!</h4>
+    </div>
+    <div class="select-theme">
+      <select id="select-event" onchange="">
+        <option selected id="event themes" value="themes">Themes</option>
+        <option id="event option1" value="christmas">Christmas</option>
+        <option id="event option2" value="valentines">Valentines</option>
+        <option id="event option3" value="newyears">New Year's Day</option>
+        <option id="event option4" value="stpatrick">St Patrick's Day</option>
+        <option id="event option5" value="easter">Easter</option>
+      </select>
+    </div>
+  </div>
+</div>
+<!--<div id="pictures">
+  <img id="bauble" src="image/bauble-1814949_960_720.png">
+  <img id="bauble2" src="image/bauble-1814949_960_720.png">
+</div>  
+  <br/>
+    
+  <img id="rabbit" src="image/bunny-306263_960_720.png">
+  <img id="rabbit2" src="image/bunny-306263_960_720.png">
+  <img id="rabbit3" src="image/bunny-306263_960_720.png">-->
+
+
+<!--TEMPLATES TO CHOOSE-->
+<div class="container">
+  <div class="card card-custom">
+    <div class="steps">
+      <span class="steps-cirlce">1</span>
+      <h3>Choose your <span class="highlight">template:</span></h3>
+    </div>
+      <div class="box">
+        <div class="input-wrap">
+          <p class="templates-paragraph">Minimum 7 images/videos required</p>
+          <label for="temp1">
+            <video width="270" id="thisVideo" height="200" controls poster="http://visionhk.hk.ufileos.com/template/preview49.jpg" value="1,1,2,2,3,3,4,5,6,7,7">
+              <source src="http://visionhk.hk.ufileos.com/template/template49.mp4" type="video/mp4">
+            </video>
+          </label>    
+          <input type="radio" name="video" id="49"  value="1,1,2,2,3,3,4,5,6,7,7"  data-img="7">
+        </div>
+        <div class="input-wrap">
+          <p class="templates-paragraph">Minimum 5 images/videos required</p>
+          <label for="temp2">
+            <video width="270" height="200" controls poster="http://visionhk.hk.ufileos.com/template/preview53.jpg">
+              <source src="http://visionhk.hk.ufileos.com/template/template53.mp4" type="video/mp4">
+            </video>
+          </label>
+          <input type="radio" name="video" id="53" value="1,2,3,4,5" data-img="5">
+        </div>
+        <div class="input-wrap">
+          <p class="templates-paragraph">Minimum 6 images/videos required</p>
+          <label for="temp3">
+            <video width="270" height="200" controls poster="http://visionhk.hk.ufileos.com/template/preview79.jpg">
+              <source src="http://visionhk.hk.ufileos.com/template/template79.mp4" type="video/mp4">
+            </video>                    
+          </label>  
+          <input type="radio" name="video" id="79" value="1,2,3,4,5,6" data-img="6">
+        </div>  
+      </div>
+  </div>
+</div> 
+<br/>
+<br/>
+
+<!--UPLOADS IMAGES AND LOGO-->
+<div class="container" id="uploadContainer">
+  <div class="card card-custom p-2 mr-2" id="upload-images-sector">
+    <div class="upload-images-only">
+      <div class="steps">
+        <span class="steps-cirlce">2</span>
+        <h3>Upload your images/videos</h3>
+      </div>
+      <div class="modal-body">
+        <button class="upload-area">
+          <div class="upload-wrap">
+            <span class="upload-area-description">
+              Select your files</span>
+            <div class="image-upload2">
+              <label for="file-input1">
+                <i class="bi bi-folder-plus"></i>
+              </label>
+                      
+              <input type="file" id="file-input1"  accept="image/jpeg,video/mp4" multiple required>
+            </div>
+          </div>
+        </button>
+        <div id="preview" class="preview-images-zone"></div>
+      </div>
+    </div>
+  </div>
+  <div class="card card-custom p-2 ml-2" id="upload-logo-sector">
+    <div class="upload-logo-only">
+      <div class="steps">
+        <span class="steps-cirlce">3</span>
+        <h3>Upload your logo</h3>
+      </div>
+      <div class="modal-body">
+        <button class="upload-area">
+          <div class="upload-wrap">
+            <span class="upload-area-description">
+              Select your file</span>
+            <div class="image-upload2">
+              <label for="logo-image">
+                <i class="bi bi-cloud-plus"></i>
+              </label>
+              <input type="file" id="logo-image" class="form-control" accept="image/png">
+            </div>
+          </div>
+          <div class="preview-logo-zone"></div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+                 
+<!--MUSIC TO CHOOSE -->
+<div class="container">
+  <div class="card card-custom">
+    <div class="steps">
+      <span class="steps-cirlce">4</span>
+      <h3>Select your music</h3>
+    </div>
+    <div class="outline">
+      <div class="player">
+        <div class="player__header">
+          <div class="player__img player__img--absolute slider">
+            <button class="player__button player__button--absolute--nw playlist">
+              <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+            </button>
+            <button class="player__button player__button--absolute--center play">
+              <i class="bi bi-play-circle" id="play"></i>
+              <i class="bi bi-pause-circle"></i>
+            </button>
+          </div>
+          <div class="player__controls">
+            <button class="player__button back">
+              <i class="bi bi-skip-start-circle"></i>
+            </button>
+            <p class="player__context slider__context">
+              <strong class="slider__name"></strong>
+              <span class="player__title slider__title"> </span>
+            </p>
+            <button class="player__button next">
+              <i class="bi bi-skip-end-circle"></i>
+            </button>
+            <div class="progres">
+              <div class="progres__filled"></div>
+            </div>
+          </div>
+        </div>
+        <ul class="player__playlist list">
+          <li class="player__song">
+            <label for="song1" class="player__context">
+              <img src="images/christmas_tree.jpg" alt="song avatar">
+              <b class="player__song-name">Dance Of The Sugar Plum Fairies</b>
+              <span class="flex">
+                <span class="player__title"></span>
+                <span class="player__song-time"></span>
+              </span>
+              <input type="radio" id="song1" name="songs" value="Dance_of_the_Sugar_Plum_Fairies" checked>
+            </label>
+            <audio class="audio"  id="289" src=" http://visionhk.hk.ufileos.com/music/Dance_of_the_Sugar_Plum_Fairies.mp3"></audio>
+          </li>
+          <li class="player__song">
+            <label for="song2" class="player__context">
+              <img src="images/stars2.jpg" alt="song avatar">
+              <b class="player__song-name">Christmas Village</b>
+              <span class="flex">
+                <span class="player__title"></span>
+                <span class="player__song-time"></span>
+              </span>
+              <input type="radio" id="song2" name="songs" value="Christmas_Village">
+            </label>
+            <audio class="audio" id="290" src="http://visionhk.hk.ufileos.com/music/Christmas_Village.mp3"></audio>
+          </li>
+          <li class="player__song">
+            <label for="song3" class="player__context">
+              <img src="images/lights.jpg" alt="song avatar">
+              <b class="player__song-name">Canon and Variation</b>
+              <span class="flex">
+                <span class="player__title"></span>
+                <span class="player__song-time"></span>
+              </span>
+              <input type="radio" id="song3" name="songs" value="Canon_and_Variation">
+            </label>
+            <audio class="audio" id="291" src="http://visionhk.hk.ufileos.com/music/Canon_and_Variation.mp3"></audio>
+          </li>
+          <li class="player__song">
+            <label for="song4" class="player__context">
+              <img src="images/snow.jpg" alt="song avatar">
+              <b class="player__song-name">Hip Hop Christmas</b>
+              <span class="flex">
+                <span class="player__title"></span>
+                <span class="player__song-time"></span>
+              </span>
+              <input type="radio" id="song4" name="songs" value="Hip_Hop_Christmas">
+            </label>
+            <audio class="audio" id="292" src="http://visionhk.hk.ufileos.com/music/Hip_Hop_Christmas.mp3"></audio>
+          </li>
+          <li class="player__song">
+            <label for="song5" class="player__context">
+              <img src="images/mountains.jpg" alt="song avatar">
+              <b class="player__song-name">Jingle Bells</b>
+              <span class="flex">
+                <span class="player__title"></span>
+                <span class="player__song-time"></span>
+              </span>
+              <input type="radio" id="song5" name="songs" value="Jingle_Bells_7">
+            </label>
+            <audio class="audio" id="293" src="http://visionhk.hk.ufileos.com/music/Jingle_Bells_7.mp3"></audio>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--ANALYZE PART-->
+<br/>
+<div class="container">
+  <div class="card card-custom">
+    <div class="steps">
+      <span class="steps-cirlce">5</span>
+      <h3>Analyse marketing frazes</h3>
+    </div>
+    <div class="notenoughImg" id="notenoughImg" style="display: none;">
+      <p class="notenoughImg-p"><i class="bi bi-exclamation-circle"></i>Please provide minimum of images/videos</p>
+    </div>
+    <div class="analyze-area">
+      <textarea placeholder="Input your desired frazes here." cols="40" rows="3"></textarea>
+    </div>
+    <div class="btn-area">
+     <button class="analyse-btn" onclick="analyseText();"><i class="bi bi-gear"></i>Analyse</button>
+    </div>
+    <div class="analyse-show-results">
+      <div style="display:none;" id="imshow"></div>
+      <div  id="phrases"></div>
+    </div>
+  </div>
+</div>
+<div class="btn-area">
+  <button class="finish-btn" onclick="fetchDataFirebase();">Finish</button>
+</div>
+
+
+
+     
+        
