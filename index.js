@@ -27,7 +27,7 @@ app.use(express.static(__dirname + '/public/images'));
 app.use(express.json());
 
 
-app.get("/", (req, res) => {
+app.get("/freetrial", (req, res) => {
   res.render("index");
 });
 var globalurl  = "";
